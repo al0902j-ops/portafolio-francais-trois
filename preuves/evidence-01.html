@@ -16,87 +16,309 @@
 
 <body>
 
-    <header>
 
-        <p>Evidence 01</p>
+    <header class="site-header">
 
-        <h1>Ma présentation personnelle</h1>
+        <div class="site-identity">
 
-        <dl>
+            <p class="site-title">
+                Portafolio de Français III
+            </p>
 
-            <div>
-                <dt>Date de réalisation</dt>
+            <p class="site-description">
+                Mes preuves et mon progrès pendant le cours.
+            </p>
 
-                <dd>
-                    <time datetime="2026-08-23">
-                        20 août 2026
-                    </time>
-                </dd>
-            </div>
-
-            <div>
-                <dt>Date de publication</dt>
-
-                <dd>
-                    <time datetime="2026-08-24">
-                        24 août 2026
-                    </time>
-                </dd>
-            </div>
-
-        </dl>
+        </div>
 
     </header>
 
-    <nav aria-label="Navigation principale">
+
+    <nav class="main-nav" aria-label="Navigation principale">
 
         <ul>
+
             <li>
-                <a href="../index.html">Principal</a>
+                <a href="../index.html">
+                    Principal
+                </a>
             </li>
 
             <li>
-                <a href="#">Description du cours</a>
+                <a href="#">
+                    Description du cours
+                </a>
             </li>
 
             <li>
-                <a href="index.html">Preuves</a>
+                <a href="index.html">
+                    Preuves
+                </a>
             </li>
 
             <li>
-                <a href="#">Ressources</a>
+                <a href="#">
+                    Ressources
+                </a>
             </li>
 
             <li>
-                <a href="#">À propos de moi</a>
+                <a href="#">
+                    À propos de moi
+                </a>
             </li>
+
         </ul>
 
     </nav>
 
-    <main>
 
-        <p>
+    <main class="evidence-page">
+
+        <!-- Regresar al índice de evidencias -->
+
+        <p class="back-link">
+
             <a href="index.html">
                 ← Retour aux preuves
             </a>
+
         </p>
 
+
+        <!-- =================================
+             EVIDENCIA INDIVIDUAL
+        ================================== -->
+
         <article class="evidence">
+
+
+            <!-- CABECERA DE LA EVIDENCIA -->
+
+            <header class="evidence-header">
+
+                <p class="evidence-number">
+                    Evidence 01
+                </p>
+
+                <h1>
+                    Ma présentation personnelle
+                </h1>
+
+                <!-- Información de la evidencia -->
+
+                <dl class="evidence-information">
+
+                    <div>
+
+                        <dt>
+                            Date de réalisation
+                        </dt>
+
+                        <dd>
+
+                            <time datetime="2026-08-20">
+                                20 août 2026
+                            </time>
+
+                        </dd>
+
+                    </div>
+
+
+                    <div>
+
+                        <dt>
+                            Date de publication
+                        </dt>
+
+                        <dd>
+
+                            <time datetime="2026-08-24">
+                                24 août 2026
+                            </time>
+
+                        </dd>
+
+                    </div>
+
+                </dl>
+
+            </header>
+
+
+
+            <section class="transcription">
+
+            <h2>
+                Transcription
+            </h2>
+
+            <div class="transcription-content">
+
+                <p>
+                    Bonjour !
+                </p>
+
+                <p>
+                    Pour commencer, je vais me présenter.
+                    Je m'appelle Alejandro Jimenez, j'ai 23 ans,
+                    je suis informaticien, j'habite à Puebla et
+                    je vais à l'université, à la BUAP.
+                </p>
+
+                <p>
+                    J'aime le sport, la musique et le cinéma.
+                    J'aime jouer de la guitare et du piano,
+                    faire du vélo et jardiner.
+                </p>
+
+                <p>
+                    Je suis quelqu'un de sympathique, responsable
+                    et un peu timide. J'ai les yeux marron et les
+                    cheveux noirs. Mes endroits préférés sont la
+                    bibliothèque, le musée et le parc. Je déteste
+                    les banques parce que je n'aime pas les longues
+                    files d'attente.
+                </p>
+
+                <p>
+                    Voilà, c'est tout ! Au revoir !
+                </p>
+
+            </div>
+
+        </section>
+
+
+            <!-- =================================
+                 VIDEO
+            ================================== -->
+
+            <section class="evidence-video">
+
+                <h2>
+                    Vidéo
+                </h2>
+
+                <video controls>
+
+                    <source
+                        src="../assets/videos/evidence-01-fr.mp4"
+                        type="video/mp4"
+                    >
+
+                    <track
+                        src="../assets/subtitles/evidence-01-fr.vtt"
+                        kind="subtitles"
+                        srclang="fr"
+                        label="Français"
+                        default
+                    >
+
+                    Votre navigateur ne prend pas en charge
+                    la lecture de vidéos.
+
+                </video>
+
+            </section>
+
+
+            <!-- =================================
+                 TRANSCRIPCIÓN
+            ================================== -->
+
+            <section class="transcription">
+
+                <h2>
+                    Transcription
+                </h2>
+
+                <div class="transcription-content">
+
+                    <p>
+                        La transcription de la vidéo
+                        sera ajoutée ici.
+                    </p>
+
+                </div>
+
+            </section>
 
         </article>
 
     </main>
 
-    <aside>
+
+    <!-- =====================================
+         CONTENIDO COMPLEMENTARIO
+    ====================================== -->
+
+    <aside class="site-aside">
+
+        <section>
+
+            <h2>
+                À propos de cette preuve
+            </h2>
+
+            <p>
+                Evidence 01 du cours de Français III.
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>
+                Navigation
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Toutes les preuves
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        Retour à l'accueil
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
 
     </aside>
 
-    <footer>
+
+    <!-- =====================================
+         PIE DE PÁGINA
+    ====================================== -->
+
+    <footer class="site-footer">
+
+        <p>
+            Portafolio de Français III
+        </p>
+
+        <p>
+            © 2026
+        </p>
 
     </footer>
 
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
     <script src="../js/main.js"></script>
+
 </body>
 
 </html>
