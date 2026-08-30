@@ -369,3 +369,89 @@ main {
 .site-aside a:hover {
     color: var(--color-accent);
 }
+
+/* =====================================
+   9. CONTENEDOR DE LA PÁGINA PRINCIPAL
+===================================== */
+
+.home-page {
+    max-width: var(--max-width);
+}
+
+
+.home-page section {
+    width: 100%;
+}
+
+/* =====================================
+   10. DETALLES EDITORIALES
+===================================== */
+
+.evidence-number::before {
+    content: "— ";
+}
+
+
+.article-preview h3 {
+    font-weight: 500;
+}
+
+
+.article-preview h3::after {
+    content: ".";
+    color: var(--color-accent);
+}
+
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            auto
+            auto
+            auto
+            auto
+            auto;
+
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+
+    .site-aside {
+        border-left: none;
+        border-top: 1px solid var(--color-border);
+    }
+
+
+    .site-header {
+        padding: 2rem 1rem;
+    }
+
+
+    main,
+    .site-aside {
+        padding: 1.5rem 1rem;
+    }
+
+
+    .latest-article {
+        max-width: none;
+    }
+}
